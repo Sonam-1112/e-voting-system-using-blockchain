@@ -53,7 +53,7 @@
   "sourceMap": "66:352:1:-;;;113:10;90:33;;;;;;;;;;;;;;;;;;;;66:352;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:352:1;;;;;;;",
   "deployedSourceMap": "66:352:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:352:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;127:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;90:33;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;313:103;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;313:103:1;;;;;;;;;;;;;;;;;:::i;:::-;;127:36;;;;:::o;90:33::-;;;;;;;;;;;;;:::o;313:103::-;225:5;;;;;;;;;;;211:19;;:10;:19;;;196:101;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;402:9;375:24;:36;;;;313:103;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.8.0;\n\ncontract Migrations {\n  address public owner = msg.sender;\n  uint public last_completed_migration;\n\n  modifier restricted() {\n    require(\n      msg.sender == owner,\n      \"This function is restricted to the contract's owner\"\n    );\n    _;\n  }\n\n  function setCompleted(uint completed) public restricted {\n    last_completed_migration = completed;\n  }\n}\n",
-  "sourcePath": "C:\\Users\\DELL\\Downloads\\mega_project\\contest\\contracts\\Migrations.sol",
+  "sourcePath": "C:\\Users\\DELL\\Documents\\projects\\e-voting-system-using-blockchain\\contracts\\Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -915,12 +915,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x7eB15EE20d54a381deaDAA0a8F1Bb50e83DD175f",
-      "transactionHash": "0xb638f5f0ce3a637b4bc0585373085dd1ab0d6d31545018e0fbe4d4774a0548c2"
+      "address": "0x992237A82Bc548bC2E2b222da8F82700bbEFe512",
+      "transactionHash": "0xb97005812bd41abbda5d4cdd309a253397673a834e27894045adb7f5300cafee"
     }
   },
   "schemaVersion": "3.4.9",
-  "updatedAt": "2022-10-06T13:47:02.231Z",
+  "updatedAt": "2022-11-12T10:02:29.985Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

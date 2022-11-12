@@ -112,7 +112,7 @@ App = {
 
           var contestantTemplate="<div class='card' style='width: 15rem; margin: 1rem;'><img class='card-img-top'src='../img/Sample_User_Icon.png' alt=''><div class='card-body text-center'><h4 class='card-title'>" 
           + name + "</h4>"+
-          "<button type='button' class='btn btn-info' data-toggle='modal' data-target='#modal"+id+"'>Click Here to Vote</button>" 
+          "<button type='button' class='btn btn-warning' data-toggle='modal' data-target='#modal"+id+"'>Click Here to Vote</button>" 
           + "<div class='modal fade' id='modal"+id+"' tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true'>"
           + "<div class='modal-dialog modal-dialog-centered' role='document'>"
           + "<div class='modal-content'>"
@@ -122,8 +122,8 @@ App = {
           + "</div>"
           + "<div class='modal-body'> <b> Party : " + fetchedParty +"<br>Age : " + fetchedAge + "<br>Qualification : " + fetchedQualification + "<br></b></div>"
           + "<div class='modal-footer'>"
-          + "<button class='btn btn-info' onClick='App.castVote("+id.toString()+")'>VOTE</button>"
-          +"<button type='button' class='btn btn-info' data-dismiss='modal'>Close</button></div>"
+          + "<button class='btn btn-warning' onClick='App.castVote("+id.toString()+")'>VOTE</button>"
+          +"<button type='button' class='btn btn-danger' data-dismiss='modal'>Close</button></div>"
           + "</div></div></div>"
           + "</div></div>";
           contestantsResults.append(contestantTemplate)  ;
