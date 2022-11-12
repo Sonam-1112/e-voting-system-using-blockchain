@@ -264,7 +264,7 @@ App = {
   registerVoter: function(){
     var add=$('#accadd').val();
     App.contracts.Contest.deployed().then(function(instance){
-      return instance.voterRegisteration(add);
+      return instance.voterRegistration(add);
     }).then(function(result){
       $("#content").hide();
       $("#loader").show();

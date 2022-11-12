@@ -53,7 +53,7 @@ contract Contest{
 		contestants[contestantsCount]=Contestant(contestantsCount,_name,0,_party,_age,_qualification);
 	}
 
-	function voterRegisteration(address user) public onlyAdmin validState(PHASE.reg){
+	function voterRegistration(address user) public onlyAdmin validState(PHASE.reg){
 		voters[user].isRegistered=true;
 	}
 

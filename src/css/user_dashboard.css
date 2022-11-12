@@ -8,8 +8,8 @@ body{
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
-    background-color: #46a5f2;
+    left: 0; 
+    background-color: wheat;
     overflow-x: hidden;
     padding-top: 20px;
     /* border: black;
@@ -47,13 +47,13 @@ body{
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: white;
+    color: black;
     display: block;
 }
 
 .sidenav a:hover{
     background-color: rgb(239, 243, 221);
-    color: #46a5f2;
+    color: black;
 }
 
 
@@ -96,13 +96,13 @@ h3 {
 }
 
 .btn{
-    background-color: #46a5f2 !important;
+    background-color: wheat !important;
     color: white;
 
 }
 .btn:hover{
     background-color: rgb(239, 243, 221) !important;
-    color: #46a5f2 !important;
+    color: wheat !important;
     transition: .4s !important;
     cursor: pointer !important;
   } 
