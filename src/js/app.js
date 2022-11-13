@@ -123,7 +123,7 @@ App = {
           + "<div class='modal-body'> <b> Party : " + fetchedParty +"<br>Age : " + fetchedAge + "<br>Qualification : " + fetchedQualification + "<br></b></div>"
           + "<div class='modal-footer'>"
           + "<button class='btn btn-warning' onClick='App.castVote("+id.toString()+")'>VOTE</button>"
-          +"<button type='button' class='btn btn-danger' data-dismiss='modal'>Close</button></div>"
+          +"<button type='button' class='btn btn-warning' data-dismiss='modal'>Close</button></div>"
           + "</div></div></div>"
           + "</div></div>";
           contestantsResults.append(contestantTemplate)  ;
