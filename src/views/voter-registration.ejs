@@ -108,11 +108,11 @@
                           <div class="col">
                             <div class="form-outline">
                                 <br/>
-                              <input type="text" id="aadharno" class="form-control" name='aadharno' required/>
+                              <input type="text" id="aadharno" class="form-control" minlength="12" maxlength="12" name='aadharno' required/>
                               <label class="form-label" for="aadharno">Aadhar Number</label>
                               <small id="message" class="form-text text-muted"></small>
                             </div>
-                            <button class="btn btn-sm btn-warning" onclick="verify()">verify</button>
+                            <button id="addharbtn" class="btn btn-sm btn-warning" onclick="verify()">verify</button>
                           </div>
                           </div>
                           <div class="row">
@@ -216,7 +216,6 @@
 	    [2, 7, 9, 3, 8, 0, 6, 4, 1, 5],
 	    [7, 0, 4, 6, 9, 1, 3, 2, 5, 8]
 	]
-
 	// validates Aadhar number received as string
 	function validate(aadharNumber) {
 	    let c = 0
@@ -228,6 +227,7 @@
 
 	    return (c === 0)
 	}
+
 
 	function verify() {
 		var message = document.getElementById("message");
